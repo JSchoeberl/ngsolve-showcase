@@ -221,9 +221,11 @@
 <li class="toctree-l1"><a class="reference internal" href="wta/capacitor.html">1. The electric field in a capacitor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wta/elasticity3D.html">2. 3D Solid Mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="wta/coil.html">3. Magnetostatics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="wta/tesla.html">4. Tesla Valve</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="wta/shell.html">5. Shells</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="wta/Sydney.html">5.3. Sydney</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wta/derham.html">4. The de Rham complex</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="wta/tesla.html">5. Tesla Valve</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="wta/shell.html">6. Shells</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="wta/Sydney.html">6.3. Sydney</a></li>
 </ul>
 </details></li>
 </ul>
@@ -461,11 +463,15 @@ TU Wien and CERBSim GmbH</p>
 <td><p>magnetostatics</p></td>
 <td><p>two coupled problems, current flow plus <span class="math notranslate nohighlight">\(H(\operatorname{curl})\)</span> Maxwell, field lines</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="wta/tesla.html"><span class="std std-doc">Tesla valve</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="wta/derham.html"><span class="std std-doc">de Rham complex</span></a></p></td>
+<td><p>mathematics</p></td>
+<td><p>exact sequences and exact conservation laws; Piola transformation keeps fields divergence-free on deformed domains</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="wta/tesla.html"><span class="std std-doc">Tesla valve</span></a></p></td>
 <td><p>incompressible Navier–Stokes</p></td>
 <td><p>exactly divergence-free <span class="math notranslate nohighlight">\(H(\operatorname{div})\)</span> hybrid DG, matrix-free convection, IMEX time stepping</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="wta/shell.html"><span class="std std-doc">Shells</span></a>, <a class="reference internal" href="wta/Sydney.html"><span class="std std-doc">Sydney</span></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="wta/shell.html"><span class="std std-doc">Shells</span></a>, <a class="reference internal" href="wta/Sydney.html"><span class="std std-doc">Sydney</span></a></p></td>
 <td><p>nonlinear shell mechanics</p></td>
 <td><p>surface meshes, mixed TDNNS method, Newton with automatic differentiation; the Sydney Opera House roof</p></td>
 </tr>

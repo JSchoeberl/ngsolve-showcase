@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>5. Nonlinear shells &#8212; NGSolve showcase</title>
+    <title>6. Nonlinear shells &#8212; NGSolve showcase</title>
   
   
   
@@ -69,8 +69,8 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5.3. Sydney" href="Sydney.html" />
-    <link rel="prev" title="4. Tesla Valve" href="tesla.html" />
+    <link rel="next" title="6.3. Sydney" href="Sydney.html" />
+    <link rel="prev" title="5. Tesla Valve" href="tesla.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -223,9 +223,11 @@
 <li class="toctree-l1"><a class="reference internal" href="capacitor.html">1. The electric field in a capacitor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="elasticity3D.html">2. 3D Solid Mechanics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="coil.html">3. Magnetostatics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tesla.html">4. Tesla Valve</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">5. Shells</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="Sydney.html">5.3. Sydney</a></li>
+<li class="toctree-l1"><a class="reference internal" href="derham.html">4. The de Rham complex</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="tesla.html">5. Tesla Valve</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">6. Shells</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sydney.html">6.3. Sydney</a></li>
 </ul>
 </details></li>
 </ul>
@@ -388,8 +390,8 @@
             </div>
             <nav aria-label="Page">
                 <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-fields">5.1. Unknown fields</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy">5.2. Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-fields">6.1. Unknown fields</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy">6.2. Energy</a></li>
 </ul>
             </nav>
         </div>
@@ -402,7 +404,7 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="nonlinear-shells">
-<h1><span class="section-number">5. </span>Nonlinear shells<a class="headerlink" href="#nonlinear-shells" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">6. </span>Nonlinear shells<a class="headerlink" href="#nonlinear-shells" title="Link to this heading">#</a></h1>
 <p>Naghdi shell model with large deformations, discretized by a mixed method.
 Joint work with M. Neunteufel [‘19, ‘21], PhD thesis Neunteufel (2021).</p>
 <p>A cylindrical tube is clamped at the left rim and pulled apart by the force density <span class="math notranslate nohighlight">\(f = (0, \lambda y, 0)\)</span>.
@@ -430,7 +432,7 @@ The shell is a surface mesh in 3D; the clamped rim is a named edge of the CAD mo
 <script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 1, "model_id": "56bdf109006c4672b9a4d8d0c1cb245b"}</script></div>
 </div>
 <section id="unknown-fields">
-<h2><span class="section-number">5.1. </span>Unknown fields<a class="headerlink" href="#unknown-fields" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.1. </span>Unknown fields<a class="headerlink" href="#unknown-fields" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>displacement <span class="math notranslate nohighlight">\(u \in [H^1(S)]^3\)</span></p></li>
 <li><p>linearized rotation <span class="math notranslate nohighlight">\(\beta \in H(\operatorname{curl},S)\)</span></p></li>
@@ -479,7 +481,7 @@ All spaces live on the surface, the trace operators give their surface values:</
 </div>
 </section>
 <section id="energy">
-<h2><span class="section-number">5.2. </span>Energy<a class="headerlink" href="#energy" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.2. </span>Energy<a class="headerlink" href="#energy" title="Link to this heading">#</a></h2>
 <p>The total energy is the sum of</p>
 <ul class="simple">
 <li><p>membrane energy, nonlinear in the displacement <span class="math notranslate nohighlight">\(u\)</span>, with the surface Green strain <span class="math notranslate nohighlight">\(E_{tt} = C_{tt}(u) - P_t\)</span>:
@@ -619,7 +621,7 @@ The color shows the norm of the bending moments <span class="math notranslate no
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Tesla Valve</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Tesla Valve</p>
       </div>
     </a>
     <a class="right-next"
@@ -627,7 +629,7 @@ The color shows the norm of the bending moments <span class="math notranslate no
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5.3. </span>Sydney</p>
+        <p class="prev-next-title"><span class="section-number">6.3. </span>Sydney</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -649,8 +651,8 @@ The color shows the norm of the bending moments <span class="math notranslate no
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-fields">5.1. Unknown fields</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy">5.2. Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unknown-fields">6.1. Unknown fields</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy">6.2. Energy</a></li>
 </ul>
   </nav></div>
 
